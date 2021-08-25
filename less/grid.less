@@ -1,0 +1,15 @@
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 0px 1fr;
+  grid-template-columns: 200px 1fr;
+  -ms-grid-rows: 50px 0px 1fr 0px 100px;
+  grid-template-rows: auto 1fr auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header"
+    "users chat"
+    "footer footer";
+  height: 100vh;
+}

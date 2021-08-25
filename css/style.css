@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #131313;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+  color: #131313;
+}
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 0px 1fr;
+  grid-template-columns: 200px 1fr;
+  -ms-grid-rows: 50px 0px 1fr 0px 100px;
+  grid-template-rows: auto 1fr auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header header" "users chat" "footer footer";
+  height: 100vh;
+}
+.header {
+  grid-area: header;
+  min-height: 50px;
+  background-color: #4745b1;
+}
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.header__item {
+  margin: 5px;
+  padding: 10px;
+}
+.header__link {
+  padding: 10px;
+  background-color: #e2e2e2;
+}
+.header__link:hover {
+  background-color: #a0a0a0;
+}
+.users {
+  grid-area: users;
+  width: 200px;
+  background-color: #9ccecf;
+  overflow-y: scroll;
+}
+.users__list {
+  padding: 5px;
+}
+.users__item {
+  padding: 5px 0;
+}
+.users__name {
+  font-size: 14px;
+}
+.chat {
+  grid-area: chat;
+  background-color: #ddf4f5;
+  overflow-y: scroll;
+}
+.chat__item {
+  display: block;
+  padding: 10px;
+  font-size: 24px;
+}
+.chat__to-me {
+  background-color: #80dbbd;
+}
+.chat__to-me::before {
+  content: 'Бенедикт: ';
+  font-size: 18px;
+  color: #5b64eb;
+}
+.chat__from-me::before {
+  content: 'Кулумбек: ';
+  font-size: 18px;
+  color: #5b64eb;
+}
+.footer {
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  min-height: 100px;
+  background-color: #4745b1;
+}
+.footer__input {
+  width: 90%;
+  margin: 20px;
+}
+.footer__btn {
+  margin: 20px;
+  background-color: #e2e2e2;
+  cursor: pointer;
+  border: none;
+}
+.footer__btn:hover {
+  background-color: #a0a0a0;
+}

@@ -1,0 +1,25 @@
+.chat {
+  grid-area: chat;
+  background-color: #ddf4f5;
+  overflow-y: scroll;
+  &__item {
+    display: block;
+    padding: 10px;
+    font-size: 24px;
+  }
+  &__to-me {
+    background-color: #80dbbd;
+    &::before {
+      content: 'Бенедикт: ';
+      font-size: 18px;
+      color: #5b64eb;
+    }
+  }
+  &__from-me {
+    &::before {
+      content: 'Кулумбек: ';
+      font-size: 18px;
+      color: #5b64eb;
+    }
+  }
+}
