@@ -28,7 +28,7 @@ body a {
 .header {
   grid-area: header;
   min-height: 50px;
-  background-color: #4745b1;
+  background-color: #5f5db1;
 }
 .header__list {
   display: -webkit-box;
@@ -96,7 +96,7 @@ body a {
       -ms-flex-pack: start;
           justify-content: flex-start;
   min-height: 100px;
-  background-color: #4745b1;
+  background-color: #5f5db1;
 }
 .footer__input {
   width: 90%;
